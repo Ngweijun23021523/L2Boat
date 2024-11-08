@@ -24,7 +24,7 @@ const  AllBoat =() => {
         <ScrollView>
             <Text></Text>
             <Text></Text>
-            <Text style={styles.Title} >GetABoat - ForSale</Text>
+            <Text style={styles.Title} >GetABoat -  ForSale</Text>
             <Boat Name="Doctor Sleep" description="Contoured lines and dramatic styling reveal a refined and powerful presence that will take your breath away"
                   icon_name="ship" poster={require("./img/sea_ray.jpg")} />
 
