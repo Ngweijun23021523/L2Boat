@@ -21,7 +21,7 @@ const Boat = ({ Name, description, icon_name, poster }) => {
 
 const styles = StyleSheet.create({
     name: {
-        fontSize: 24,
+        fontSize: 24 ,
         fontWeight: 'bold',
         color: '#333',
         paddingVertical: 10,
