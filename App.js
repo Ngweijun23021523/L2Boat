@@ -1,14 +1,30 @@
 import React from 'react';
-import {  Text, ScrollView, Image } from 'react-native';
+import {Text, ScrollView, Image, StyleSheet} from 'react-native';
 import Boat from "./components/Boat";
 
+const styles = StyleSheet.create({
+
+
+    Title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        fontStyle: 'italic',
+        marginTop:40,
+        backgroundColor:'grey',
+        borderWidth:5,
+
+
+    },
+
+});
 const  AllBoat =() => {
 
     return (
         <ScrollView>
             <Text></Text>
             <Text></Text>
-            <Text>GetABoat - ForSale</Text>
+            <Text style={styles.Title} >GetABoat - ForSale</Text>
             <Boat Name="Doctor Sleep" description="Contoured lines and dramatic styling reveal a refined and powerful presence that will take your breath away"
                   icon_name="ship" poster={require("./img/sea_ray.jpg")} />
 
@@ -30,6 +46,8 @@ const  AllBoat =() => {
     );
 
 }
+
+
 
 export default AllBoat;
 

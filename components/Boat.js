@@ -13,7 +13,7 @@ const Boat = ({ Name, description, icon_name, poster }) => {
 
             <Image
                 source={poster}
-                style={{width:400, height:400}}
+                style={styles.image}
             />
         </ScrollView>
     );
@@ -27,15 +27,32 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         textAlign: 'left',
         fontStyle: 'italic',
+        backgroundColor:'darkgrey',
+        borderWidth:5,
+        paddingLeft:10
 
     },
     description: {
-        fontSize: 16,
-        color: '#555',
-        marginVertical: 8,
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: 'white',
+        textAlign: 'center',
+        fontStyle: 'italic',
+        backgroundColor:'skyblue',
+        borderWidth:5,
 
-        textAlign: 'left',
     },
+
+    image:{
+        width:410,
+        height:410,
+        borderWidth:5,
+
+
+    }
+
+
+
 
 });
 
